@@ -1,4 +1,4 @@
-# INVIDAR WebAR Boilerplate
+# Feed Me - Demo project
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
