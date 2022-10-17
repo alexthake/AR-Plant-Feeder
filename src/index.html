@@ -70,11 +70,15 @@
       </a-assets>
 
       <!-- Camera -->
-      <a-entity id="camera" position="0 1 0" rotation="0 0 0" camera throw-food="buttonID: #throwButton; modelID: #steak-glb; mouthID: #plantAttackHitbox; plantID: #plant; power: 10;"></a-entity>
+      <a-entity id="camera" position="0 1.35 0" rotation="0 0 0" camera throw-food="buttonID: #throwButton; modelID: #steak-glb; mouthID: #plantAttackHitbox; plantID: #plant; power: 10;"></a-entity>
 
       <!-- Lighting -->
       <a-entity light="type: ambient; color: #FFF; intensity: 0.15"></a-entity>
       <a-light id="dirlight" intensity="1" light="castShadow:true; type:directional" position="2 2 2"></a-light>
+      <a-entity light="type: spot; angle: 15; target: #lightTarget1;" position="1.5 3 1" rotation="0 45 0"></a-entity>
+      <a-entity light="type: spot; angle: 15; target: #lightTarget2;" position="-1.5 3 1" rotation="0 -45 0"></a-entity>
+      <a-entity id="lightTarget1" position="-1 0 -1.5" animation="property: position; to: 1 0 -4; dur: 2000; easing: easeInOutSine; loop: true; dir: alternate"></a-entity>
+      <a-entity id="lightTarget2" position="1 0 -1.5" animation="property: position; to: -1 0 -4; dur: 2000; easing: easeInOutSine; loop: true; dir: alternate"></a-entity>
 
       <!-- Sound -->
       <a-entity id="soundtrack" sound="src: #pvz-mp3; loop: true"></a-entity>
